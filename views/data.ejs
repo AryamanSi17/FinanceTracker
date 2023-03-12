@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+<h3>Your expenses in this month</h3>
+<form action="/register" method="post">
+    <i class="fa-solid fa-chart-column fa-10x fa-beat-fade"></i>
+<div class="main">
+    <div class="amount">
+        <input type="number" id="num" name="num" placeholder="Enter Amount">            
+    </div>
+    <label for="cars">Choose an entity:</label>
+
+<select id="entity" name="entity">
+<option value="Food">Food</option>
+<option value="Ration">Ration</option>
+<option value="Beverage">Beverage</option>
+<option value="City">City</option>
+</select>
+    <button type="submit">Submit</button>
+</div>
+</form>
+<%- include('partials/footer') %>
